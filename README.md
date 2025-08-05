@@ -10,3 +10,7 @@ pip install -r requirements.txt
 
 alternative of opencv is pillow
 https://pillow.readthedocs.io/en/stable/index.html
+
+tutorials pillow
+https://pillow.readthedocs.io/en/stable/handbook/tutorial.html
+
