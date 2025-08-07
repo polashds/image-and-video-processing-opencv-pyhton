@@ -1,16 +1,16 @@
 import cv2
 import numpy as np 
 
-## Resizing images
+# Resizing images
 
-# img = cv2.imread('Resources/lambo.png')
-# print(img.shape)
-# #resize take three arguments (height, width, channels) 
-# resized_img = cv2.resize(img, (300, 200))
-# print(resized_img.shape)
-# cv2.imshow('Output', img)
-# cv2.imshow('Resized_Output', resized_img)
-# cv2.waitKey(0)
+img = cv2.imread('Resources/lambo.png')
+print(img.shape)
+#resize take three arguments (height, width, channels) 
+resized_img = cv2.resize(img, (300, 200))
+print(resized_img.shape)
+cv2.imshow('Output', img)
+cv2.imshow('Resized_Output', resized_img)
+cv2.waitKey(0)
 
 
 ### Croping Image
