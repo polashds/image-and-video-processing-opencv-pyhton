@@ -1,38 +1,38 @@
 import cv2 
 
-# # Reading images
+# Reading images
 
-# img = cv2.imread("resources/lena.png")
+img = cv2.imread("resources/lena.png")
+#E:\CV-Projects-Vault\image-and-video-processing-py-cv\resources\elon.mp4
+#print(img)
+print(img.shape)
 
-# #print(img)
-# print(img.shape)
+# Displaying images in console
+cv2.imshow("Output", img)
+# Wait for a key press and close the image window
+# cv2.waitKey(0) waits indefinitely until a key is pressed
+cv2.waitKey(0)
 
-# # Displaying images in console
-# cv2.imshow("Output", img)
-# # Wait for a key press and close the image window
-# # cv2.waitKey(0) waits indefinitely until a key is pressed
-# cv2.waitKey(0)
+# reading videos
+cap = cv2.VideoCapture("resources/elon.mp4")
 
-# # reading videos
-# cap = cv2.VideoCapture("resources/elon.mp4")
+# this read the multiple frames of the video
+# and display them one by one
+while True:
+    # cap.read() this will return success and img 
+    success, img = cap.read()
+    print(img.shape)
+    cv2.imshow("Output", img)
 
-# # this read the multiple frames of the video
-# # and display them one by one
-# while True:
-#     # cap.read() this will return success and img 
-#     success, img = cap.read()
-#     print(img.shape)
-#     cv2.imshow("Output", img)
-
-#     # hexa number for q to quit
-#     # 0xFF is used to mask the value returned by cv2.waitKey()
-#     # ord('q') converts the character 'q' to its ASCII value
-#     # if the key pressed is 'q', break the loop
-#     # cv2.waitKey(1) waits for 1 millisecond
-#     # if a key is pressed, it returns the ASCII value of the key
-#     # if no key is pressed, it returns -1
-#     if cv2.waitKey(1) & 0xFF == ord('q'):
-#         break 
+    # hexa number for q to quit
+    # 0xFF is used to mask the value returned by cv2.waitKey()
+    # ord('q') converts the character 'q' to its ASCII value
+    # if the key pressed is 'q', break the loop
+    # cv2.waitKey(1) waits for 1 millisecond
+    # if a key is pressed, it returns the ASCII value of the key
+    # if no key is pressed, it returns -1
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break 
 
 
 ## reading webcam

@@ -162,5 +162,3 @@ This detects a quadrilateral automatically.
 You can also detect the region roughly and then refine it manually with clicks. This is great if you're working with noisy images or irregular lighting.
 
 ---
-
-Let me know which method suits your style—or I can walk you through building a card detector that pulls multiple regions in one go. Ready to level up your image warping game? 🛸

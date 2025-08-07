@@ -1,2 +1,7 @@
 opencv-python
 pillow
+py_dlp
+numpy
+torch
+torchvision
+matplotlib
