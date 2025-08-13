@@ -206,3 +206,5 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+torchvision/video_data_exploring.p3.ipynb
+image_annotations/scripts/data_annotation_yolov8.ipynb
